@@ -5,9 +5,6 @@
 .work__item {
   position: relative;
   width: calc((100% - 2 * #{$card-gallery-gap}) / 3);
-}
-
-.work__item {
   margin-right: $card-gallery-gap;
 
   &:last-child {

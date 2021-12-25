@@ -23,7 +23,9 @@
 
   transition: color $first-transition;
 
-  &--current {
+  &--current,
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 
@@ -37,10 +39,5 @@
 
     background-color: $accent-color;
     border-radius: 2px;
-  }
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
   }
 }

@@ -4,9 +4,6 @@
 
 .feature__item {
   width: calc((100% - 3 * #{$card-gallery-gap}) / 4);
-}
-
-.feature__item {
   margin-right: $card-gallery-gap;
 
   &:last-child {

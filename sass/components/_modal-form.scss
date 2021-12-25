@@ -32,9 +32,22 @@
 
   transition: border-color $first-transition;
 
-  .form__field:hover &,
-  .form__field:focus-within & {
+  &:hover,
+  &:focus {
     border-color: $accent-color;
+  }
+}
+
+.form__comment {
+  min-height: 120px;
+  padding: 12px 16px;
+
+  resize: none;
+
+  &::placeholder {
+    color: $modal-placeholder-color;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -56,8 +69,8 @@
   left: 12px;
   transform: translateY(-50%);
 
-  fill: currentColor;
   color: $secondary-text-color;
+  fill: currentColor;
   cursor: pointer;
 
   transition: color $first-transition;
@@ -68,24 +81,6 @@
   }
 }
 
-.form__comment {
-  min-height: 120px;
-  padding: 12px 16px;
-
-  resize: none;
-
-  &::placeholder {
-    color: $modal-placeholder-color;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-  }
-
-  &:hover,
-  &:focus {
-    border-color: $accent-color;
-  }
-}
-
 .form__checkbox-field {
   @extend %flex;
   margin-bottom: 30px;
@@ -93,14 +88,6 @@
 
 .form__checkbox-input {
   @extend %visually__hidden;
-
-  &:required {
-    border: transparent;
-    background-color: $accent-color;
-    background-image: url(../images/icon-check1.svg);
-    background-size: contain;
-    background-origin: border-box;
-  }
 }
 
 .form__checkbox-icon {
