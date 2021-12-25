@@ -38,12 +38,12 @@
   line-height: 1.19;
 }
 
-.team__social {
+.team-social__list {
   @extend %flex;
   padding: 0 32px;
 }
 
-.team__item {
+.team-social__item {
   margin-right: $social-link-gap;
 
   &:last-child {
@@ -51,7 +51,7 @@
   }
 }
 
-.team__link {
+.team-social__link {
   @extend %social__block;
 
   background: $primary-color;
